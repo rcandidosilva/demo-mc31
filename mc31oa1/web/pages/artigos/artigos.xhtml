@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j">
+
+<ui:composition template="/resources/template/template.xhtml">
+	<ui:define name="body">
+		<h:form id="frm">
+			<rich:panel>
+				<f:facet name="header">
+					<h:outputText value="Artigos Publicados" />
+				</f:facet>
+				<rich:toolBar>
+					<h:commandButton action="#{artigosMB.prepareParaCriar}"
+						value="Novo artigo..." />
+				</rich:toolBar>
+				<rich:dataTable id="dtArtigos" var="artigo"
+					value="#{artigosMB.dmArtigos}" styleClass="lista" rows="10">
+					<f:facet name="header">
+						<rich:datascroller for="dtArtigos" renderIfSinglePage="true" />
+					</f:facet>
+					<rich:column styleClass="colId">
+						<f:facet name="header">
+							<h:outputText value="#" />
+						</f:facet>
+						<h:outputText value="#{artigosMB.dmArtigos.rowIndex+1}" />
+					</rich:column>
+					<rich:column sortBy="#{artigo.titulo}">
+						<f:facet name="header">
+							<h:outputText value="Título" />
+						</f:facet>
+						<h:outputText value="#{artigo.titulo}" />
+					</rich:column>
+					<rich:column sortBy="#{artigo.dataDePublicacao.time}">
+						<f:facet name="header">
+							<h:outputText value="Data de Publicação" />
+						</f:facet>
+						<h:outputText value="#{artigo.dataDePublicacao}" />
+					</rich:column>
+					<rich:column sortBy="#{artigo.autor}" filterBy="#{artigo.autor}" filterEvent="onblur">
+						<f:facet name="header">
+							<h:outputText value="Autor" />
+						</f:facet>
+						<h:outputText value="#{artigo.autor}" />
+					</rich:column>
+					<rich:column filterBy="#{artigo.categoria.nome}" filterEvent="onkeyup">
+						<f:facet name="header">
+							<h:outputText value="Categoria" />
+						</f:facet>
+						<h:outputText value="#{artigo.categoria.nome}" />
+					</rich:column>
+					<rich:column breakBefore="true" colspan="5"
+						filterBy="#{artigo.conteudo}">
+						<h:outputText value="#{artigo.conteudo}" />
+					</rich:column>
+					<f:facet name="footer">
+						<rich:datascroller for="dtArtigos" renderIfSinglePage="true" />
+					</f:facet>
+				</rich:dataTable>
+				<rich:toolBar>
+				<h:commandButton action="#{artigosMB.atualizeArtigos}"
+					value="Atualizar" immediate="true" />
+				</rich:toolBar>
+			</rich:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

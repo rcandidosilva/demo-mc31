@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j">
+
+<ui:composition template="/resources/template/template.xhtml">
+	<ui:define name="body">
+		<h:form id="frm">
+			<rich:panel>
+				<f:facet name="header">
+					<h:outputText value="Novo artigo" />
+				</f:facet>
+				<h:panelGrid columns="3" styleClass="form">
+					<h:outputLabel value="Título:" for="itTitulo" styleClass="rotulo" />
+					<h:inputText id="itTitulo" value="#{artigosMB.artigo.titulo}"
+						size="30" required="true" label="Título" styleClass="campo" />
+					<rich:message for="itTitulo" styleClass="orientacao"></rich:message>
+
+					<h:outputLabel value="Autor:" for="itAutor" styleClass="rotulo" />
+					<h:inputText id="itAutor" value="#{artigosMB.artigo.autor}"
+						size="30" required="true" label="Autor" styleClass="campo" />
+					<rich:message for="itAutor"></rich:message>
+
+					<h:outputLabel value="Resumo:" for="itaResumo" />
+					<h:inputTextarea id="itaResumo" value="#{artigosMB.artigo.resumo}"
+						cols="80" rows="2" required="true" label="Resumo" />
+					<rich:message for="itaResumo"></rich:message>
+
+					<h:outputLabel value="Categoria:" for="somCategoria" />
+					<h:selectOneMenu id="somCategoria" value="#{artigosMB.categoriaId}"
+						label="Categoria" required="true">
+						<f:selectItems value="#{artigosMB.siCategorias}" />
+					</h:selectOneMenu>
+					<rich:message for="somCategoria"></rich:message>
+
+					<h:outputLabel value="Conteúdo: " for="itaConteudo" />
+					<h:inputTextarea id="itaConteudo"
+						value="#{artigosMB.artigo.conteudo}" cols="80" rows="10"
+						required="true" label="Conteúdo" />
+					<rich:message for="itaConteudo"></rich:message>
+
+					<h:outputLabel value="Rótulos:" for="itRotulos" />
+					<h:inputText id="itRotulos" size="50" required="false"
+						value="#{artigosMB.rotulosAsString}" label="Rótulos" />
+					<rich:message for="itRotulos"></rich:message>
+
+					<a4j:outputPanel></a4j:outputPanel>
+					<a4j:outputPanel></a4j:outputPanel>
+				<f:facet name="footer">
+					<rich:toolBar>
+						<h:commandButton action="#{artigosMB.salveArtigo}" value="Salvar" />
+						<h:commandButton action="artigos" value="Cancelar" immediate="true" />
+					</rich:toolBar>
+				</f:facet>
+				</h:panelGrid>
+			</rich:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+
+</html>

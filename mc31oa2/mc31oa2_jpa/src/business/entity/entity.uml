@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_IPzZ0Jv4Ed6I0p4cTZdImw">
+  <profileApplication xmi:id="_IPzZ0Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ0pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/types.profile.uml#_IGLtsLQGEdyD5fIBh14Avw"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/types.profile.uml#_BsfWkMUBEdqL1f35w3GLLw"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ05v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ1Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Ejb.profile.uml#_ryGNoGU3Eduqt5fXCogsKA"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Ejb.profile.uml#_EapTAMUOEdqEPMHe392Mew"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ1Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ1pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Persistence.profile.uml#_BTu3cD5IEd2gvfvyq2AafQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Persistence.profile.uml#_EUr08MUOEdqEPMHe392Mew"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ15v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ2Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Jws.profile.uml#__TdiwGqNEduFY77tdHAWhQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Jws.profile.uml#_EQNkoMUOEdqEPMHe392Mew"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ2Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ2pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/JaxWS.profile.uml#_TBISYDaoEduMwIsW97suog"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/JaxWS.profile.uml#_U3X78DagEduvZYRMfIkrDw"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ25v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ3Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/JaxRS.profile.uml#_EGNO4VNsEd22UO5eH1P0sw"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/JaxRS.profile.uml#_D0d-oFNsEd22UO5eH1P0sw"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ3Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ3pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/JaxB.profile.uml#_pgqV4fPYEd2ho4ZjBwMyTA"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/JaxB.profile.uml#_t4CL8Da_EdugNq-sJ-H7dg"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ35v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ4Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Jmx.profile.uml#_MaATMAL8EdukAeq0eHR25A"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Jmx.profile.uml#_nrD-4flfEdq0m870WJJuhQ"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ4Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ4pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Bpm.profile.uml#_lcBmUfPZEd2ZheMjN3MDrw"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Bpm.profile.uml#_imh3UOjzEdqKLuVqE-P4sg"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ45v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ5Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Hibernate.profile.uml#_x1t2IJS-Ed2ubJfKtVboPA"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Hibernate.profile.uml#_EY3KUMUOEdqEPMHe392Mew"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ5Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ5pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/HibernateSearch.profile.uml#_wd2w8SuQEd6qdqhMzRpC8g"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/HibernateSearch.profile.uml#_YqypkIzNEd2uadpzLmkXlQ"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ55v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ6Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/JBoss.profile.uml#__yWB8WnvEduFY77tdHAWhQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/JBoss.profile.uml#_RtE0EGnuEduotdtx5H1JvQ"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ6Zv4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ6pv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Seam.profile.uml#_-5zkMO12Ed2IMZD7j9vEEQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Seam.profile.uml#_SlhIkO1xEd2IMZD7j9vEEQ"/>
+  </profileApplication>
+  <profileApplication xmi:id="_IPzZ65v4Ed6I0p4cTZdImw">
+    <eAnnotations xmi:id="_IPzZ7Jv4Ed6I0p4cTZdImw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://TAYLOR_PROFILES/Taylor.profile.uml#_pOS6AGKmEd6e3uz-ZmWQTQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://TAYLOR_PROFILES/Taylor.profile.uml#_imh3UOjzEdqKLuVqE-P4sg"/>
+  </profileApplication>
+</uml:Model>

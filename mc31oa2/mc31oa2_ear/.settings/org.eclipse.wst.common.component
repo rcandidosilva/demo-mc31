@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+<wb-module deploy-name="mc31oa2_ear">
+<wb-resource deploy-path="/" source-path="/EarContent"/>
+<dependent-module deploy-path="/" handle="module:/resource/mc31oa2_web/mc31oa2_web">
+<dependent-object/>
+<dependency-type>uses</dependency-type>
+</dependent-module>
+<dependent-module deploy-path="/" handle="module:/resource/mc31oa2_ejb/mc31oa2_ejb">
+<dependent-object/>
+<dependency-type>uses</dependency-type>
+</dependent-module>
+<dependent-module archiveName="mc31oa2_jpa.jar" deploy-path="/" handle="module:/resource/mc31oa2_jpa/mc31oa2_jpa">
+<dependency-type>uses</dependency-type>
+</dependent-module>
+</wb-module>
+</project-modules>

@@ -1,0 +1,31 @@
+.divHeader{
+}
+.divFooter{
+}
+.divBody{
+	width: 900px;
+}
+.rich-messages{
+}
+.msgs{
+	padding: 5px;
+	border: 1px dashed infoBackground;
+	color: red;
+}
+body{
+	background-color: #CC;
+}
+.form {
+	color: green;
+}
+.colId {
+	width: 15px;
+	text-align: right;
+}
+.lista {
+	width: 95%;
+}
+.rotulo {
+	font-weight: bold;
+	padding-left: 5px;
+} 

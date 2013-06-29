@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="mc31PU" transaction-type="JTA">
+		<jta-data-source>java:/MySqlDS</jta-data-source>
+		<class>business.entity.Rotulo</class>
+		<class>business.entity.Categoria</class>
+		<class>business.entity.Artigo</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>        
+            <!-- 
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/mc31"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value=""/>
+            -->
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+	</persistence-unit>
+</persistence>

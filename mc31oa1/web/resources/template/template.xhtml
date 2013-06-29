@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j">
+	<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="#{facesContext.externalContext.requestContextPath}/resources/css/mc31.css" />
+	<script type="text/javascript" src="#{facesContext.externalContext.requestContextPath}/resources/js/mc31.js"></script>
+	</head>
+	<body>
+	<ui:insert name="header">
+		<div class="divHeader"></div>
+	</ui:insert>
+	<div class="divBody"><rich:messages styleClass="msgs" 
+		ajaxRendered="true" globalOnly="true">
+	</rich:messages> <ui:insert name="body">
+				corpo
+			</ui:insert></div>
+	<ui:insert name="footer">
+		<div class="divFooter"></div>
+	</ui:insert>
+	</body>
+	</html>
+</ui:composition>

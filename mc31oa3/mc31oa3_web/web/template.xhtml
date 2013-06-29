@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:rich="http://richfaces.org/rich"
+      xmlns:a4j="http://richfaces.org/a4j">
+<body>
+	<ui:composition>
+		<ui:insert name="header"><div class="divHeader" style="color: infoBackground; height: 50px; border: 1px solid black"></div></ui:insert>
+		<div class="divBody" style="color: infoBackground; border: 1px solid black; width: 100%">
+			<rich:messages style="color: blue"></rich:messages>
+			<ui:insert name="body">
+				corpo
+			</ui:insert>
+		</div>
+		<ui:insert name="footer"><div class="divFooter" style="color: infoBackground; height: 50px; border: 1px solid black"></div></ui:insert>
+	</ui:composition>
+</body>
+</html>

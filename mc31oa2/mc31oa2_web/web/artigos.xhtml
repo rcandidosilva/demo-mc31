@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a4j="http://richfaces.org/a4j">
+
+<ui:composition template="template.xhtml" >
+	<ui:define name="body">
+		<h:form id="frm">
+			<rich:panel>
+				<f:facet name="header">
+					<h:outputText value="Novo artigo" />
+				</f:facet>
+				<h:panelGrid columns="3">
+					<h:outputLabel value="Título:" for="itTitulo" />
+					<h:inputText id="itTitulo" value="#{artigosMB.artigo.titulo}"
+						size="30" required="true" label="Título" />
+					<rich:message for="itTitulo"></rich:message>
+					
+					<h:outputLabel value="Autor:" for="itAutor" />
+					<h:inputText id="itAutor" value="#{artigosMB.artigo.autor}"
+						size="30" required="true" label="Autor" />
+					<rich:message for="itAutor"></rich:message>
+					
+					<h:outputLabel value="Categoria:" for="somCategoria" />
+					<h:selectOneMenu id="somCategoria" value="#{artigosMB.categoriaId}" label="Categoria">
+						<f:selectItems value="#{artigosMB.siCategorias}"/>
+					</h:selectOneMenu>
+					<rich:message for="somCategoria"></rich:message>
+					
+					<h:outputLabel value="Conteúdo: " for="itaConteudo" />
+					<h:inputTextarea id="itaConteudo"
+						value="#{artigosMB.artigo.conteudo}" cols="80" rows="10" required="true" label="Conteúdo" />
+					<rich:message for="itaConteudo"></rich:message>
+
+					<h:outputLabel value="Rótulos:" for="itRotulos" />
+					<h:inputText id="itRotulos" size="50" required="true" value="#{artigosMB.rotulosAsString}" label="Rótulos" />
+					<rich:message for="itRotulos"></rich:message>
+					
+					<a4j:outputPanel></a4j:outputPanel>
+					<a4j:outputPanel></a4j:outputPanel>
+					<h:commandButton action="#{artigosMB.salveArtigo}" value="Salvar" />
+				</h:panelGrid>
+			</rich:panel>
+			<rich:panel>
+				<f:facet name="header">
+					<h:outputText value="Artigos Publicados" />
+				</f:facet>
+				<rich:dataTable var="artigo" value="#{artigosMB.dmArtigos}"
+					style="width: 100%">
+					<rich:column style="width: 15px">
+						<f:facet name="header">
+							<h:outputText value="#" />
+						</f:facet>
+						<h:outputText value="#{artigosMB.dmArtigos.rowIndex+1}" />
+					</rich:column>
+					<rich:column sortBy="#{artigo.titulo}">
+						<f:facet name="header">
+							<h:outputText value="Título" />
+						</f:facet>
+						<h:outputText value="#{artigo.titulo}" />
+					</rich:column>
+					<rich:column sortBy="#{artigo.dataDePublicacao.time}">
+						<f:facet name="header">
+							<h:outputText value="Data de Publicação" />
+						</f:facet>
+						<h:outputText value="#{artigo.dataDePublicacao}" />
+					</rich:column>
+					<rich:column sortBy="#{artigo.autor}" filterBy="#{artigo.autor}">
+						<f:facet name="header">
+							<h:outputText value="Autor" />
+						</f:facet>
+						<h:outputText value="#{artigo.autor}" />
+					</rich:column>
+					<rich:column filterBy="#{artigo.categoria.nome}">
+						<f:facet name="header">
+							<h:outputText value="Categoria" />
+						</f:facet>
+						<h:outputText value="#{artigo.categoria.nome}" />
+					</rich:column>
+					<rich:column breakBefore="true" colspan="5" filterBy="#{artigo.conteudo}">
+						<h:outputText value="#{artigo.conteudo}" />
+					</rich:column>
+				</rich:dataTable>
+				<h:commandButton action="#{artigosMB.atualizeArtigos}"
+					value="Atualizar" immediate="true" />
+			</rich:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: mc31oa3_ejb.jar 
+ mc31oa3_jpa.jar
+
